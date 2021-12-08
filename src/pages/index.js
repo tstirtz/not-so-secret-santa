@@ -1,14 +1,18 @@
 // Step 1: Import React
 import * as React from 'react'
+import ResponsiveDrawer from '../components/layout'
+import Box from '@mui/material/Box';
 
 // Step 2: Define your component
 const IndexPage = () => {
+  const drawerWidth = 240;
+
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    <div>
+      <ResponsiveDrawer>
+          <button>Randomly Generate New Selections</button>
+      </ResponsiveDrawer>
+    </div>
   )
 }
 
